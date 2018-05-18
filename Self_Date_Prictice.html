@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <title> test_self_Date</title>
+    <script type = "text/javascript">
+            var Update = new  Date();                                       //创建obeject 并实例化
+
+
+            var mydate = Update.getFullYear();
+            var Another_Date = ["周一",  "周二", "周三","周四","周五","周六","周天"];
+            var my_Today_Week = Update.getDay();
+            document.write("this year is :"+mydate);                                //获取年份
+            document.write("<br>"+Update);                                          //获取当前完整日期
+            document.write("<br>Today is :"+Another_Date[my_Today_Week]);           //获取星期
+
+
+            document.write("<br>"+ Update.getTime());                               //获取当前时间
+
+    </script>
+</head>
+<body>
+    <div  id = "txt">
+        <h1> Type ur message what i want      </h1>
+        <p >
+            This is my first pudule <br>
+            Date _Test!
+        </p>
+    </div>
+
+    <form>
+        <input type = "button" onclick = "tolow()" value = "ToLowerCase">
+        <input type = "button" onclick = "tohigh()" value = "ToUpperCase">
+    </form>
+    <script type = "text/javascript">
+            var chang_char = document.getElementById("txt").textContent ;
+
+            function  tolow()
+            {
+                //alert('fasfas');
+                // document.write(chang_char.toLowerCase());
+               // document.getElementById("txt").innerText = 'shihaodong';
+                document.getElementById("txt").innerHTML = chang_char.toLowerCase();                    //变换获取到的所有内容为小写
+            }
+
+            function tohigh()
+            {
+                document.getElementById("txt").innerHTML = chang_char.toUpperCase();                    //变换获取的内容为大写
+            }
+    </script>
+</body>
+</html>

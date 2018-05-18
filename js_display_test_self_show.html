@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8" http-equiv = "content-type" content = "text/html"  >
+    <title>Thow_Display_show_Test</title>
+    <script type = "text/javascript">
+        function  hide_text()
+        {
+            var self_char = document.getElementById("text_own");
+            self_char.style.display = "none";
+        }
+
+        function show_text()
+        {
+
+            var self_char = document.getElementById("text_own");
+            self_char.style.display = "block";
+        }
+    </script>
+</head>
+<body>
+<h1>prictice_javascript</h1>
+<p   id = "text_own"> 做为一个Web开发师来说，如果你想提供漂亮的网页、
+    令用户满意的上网体验，JavaScript是必不可少的工具。</p>
+<form>
+    <input type = "button" onclick = "hide_text()" value = "click to hide"/>
+    <input type = "button" onclick = "show_text()" value = "click to show"/>
+</form>
+</body>
+</html>
+
+
+
